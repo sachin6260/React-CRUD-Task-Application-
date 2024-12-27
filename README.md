@@ -1,6 +1,7 @@
 # Task Manager App
 
 A task management app built using React.js. It allows users to create, edit, delete, and manage tasks with features like task status and progress bars.
+Live Check : https://react-crud-web.netlify.app/
 
 ## Features
 
@@ -15,8 +16,7 @@ A task management app built using React.js. It allows users to create, edit, del
 - **Backend**: None (local storage is used for data persistence)
 - **Libraries**: React Router (for navigation), useState (for state management)
 
-## Setup Instructions
-
+ 
 ### 1. Clone the repository
 
 Clone the repository to your local machine:
