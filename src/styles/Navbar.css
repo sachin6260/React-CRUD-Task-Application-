@@ -1,0 +1,78 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: linear-gradient(45deg, #FF5F6D, #FFC371);
+    color: white;
+    font-family: 'Arial', sans-serif;
+     transition: background 0.3s ease;
+  }
+  
+  .navbar-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    font-size: 18px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Mobile Menu Toggle */
+  .navbar-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  /* Mobile View Styling */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      background: linear-gradient(45deg, #FF5F6D, #FFC371);  
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px;
+     }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+  

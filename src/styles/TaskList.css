@@ -1,0 +1,83 @@
+/* TaskList Styling */
+.task-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-card h3 {
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+  }
+  
+  .task-card p {
+    font-size: 16px;
+    color: #555;
+    padding: 5px;
+  }
+  
+  .task-card button {
+    background: linear-gradient(45deg, #ff6f61, #ff3f34);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .task-card button:hover {
+    background: linear-gradient(45deg, #ff3f34, #ff6f61);
+  }
+  
+  /* Progress Bar Container */
+  .progress-container {
+     width: 80%;
+  }
+  
+  .progress-bar {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    appearance: none;
+  }
+  
+  /* Specific Styles for Progress Bar */
+  .progress-bar::-webkit-progress-bar {
+    background-color: #f3f3f3;
+  }
+  
+  .progress-bar::-webkit-progress-value {
+    border-radius: 5px;
+  }
+  
+  .progress-bar.pending::-webkit-progress-value {
+    background-color: #f0ad4e; /* Yellow for Pending */
+  }
+  
+  .progress-bar.in-progress::-webkit-progress-value {
+    background-color: #ffc107; /* Orange for In Progress */
+  }
+  
+  .progress-bar.completed::-webkit-progress-value {
+    background-color: #28a745; /* Green for Completed */
+  }
+  

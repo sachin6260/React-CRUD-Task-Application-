@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+   color: #fff; /* White text color for better contrast */
+   animation: fadeIn 1s ease-in-out; /* Animation for smooth appearance */
+}
+h1{
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  }

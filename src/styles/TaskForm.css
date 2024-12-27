@@ -1,0 +1,78 @@
+ .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;  
+    margin: 40px auto;  
+    padding: 30px;
+    background-color: #fff;
+     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Input, Textarea, and Select Styling */
+  .task-form input,
+  .task-form textarea,
+  .task-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    transition: border-color 0.3s ease;
+  }
+  .task-form textarea {
+    height: 120px;  
+  }
+  /* Focus States for Form Elements */
+  .task-form input:focus,
+  .task-form textarea:focus,
+  .task-form select:focus {
+    border-color: #2575fc;  
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .task-form button {
+    background: linear-gradient(45deg, #FF6F61, #FF3F34);  
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Hover Effect */
+  .task-form button:hover {
+    background: linear-gradient(45deg, #FF3F34, #FF6F61);  
+    transform: translateY(-3px);  
+  }
+  
+  /* Button Active Effect */
+  .task-form button:active {
+    transform: translateY(0); 
+  }
+  
+  /* FadeIn Animation for Form */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .task-form {
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  
